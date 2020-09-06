@@ -29,6 +29,8 @@ jxRequirements:
         enabled: false
         production: false
     key: dev
+    owner: jstrachan
+    repository: jx3-demo-kubernetes
   - ingress:
       domain: ""
       externalDNS: false
@@ -58,6 +60,8 @@ jxRequirements:
       enabled: false
       production: false
   kaniko: true
+  pipelineUser:
+    username: jstrachan
   repository: bucketrepo
   secretStorage: local
   storage:
