@@ -13,12 +13,10 @@ pipelineConfig:
                 cpu: 1
                 memory: 2048Mi
         environment:
-        - name: GOPROXY
-          value: http://jenkins-x-athens-proxy:80
         - name: GH_ACCESS_TOKEN
           valueFrom:
             secretKeyRef:
-              name: bdd-pipeline-token-github
+              name: bdd-pipeline-token-github-ghe
               key: password
         - name: JENKINS_PASSWORD
           valueFrom:
@@ -30,6 +28,6 @@ pipelineConfig:
         stages:
         - name: ci
           steps:
-          - command: jx/bdd/boot-helm3-mc/ci.sh
-            image: gcr.io/jenkinsxio-labs-private/jxl:0.0.208
+          - command: jx/bdd/ghe/ci.sh
+            image: gcr.io/jenkinsxio/jx-cli:3.0.130
             name: runci
