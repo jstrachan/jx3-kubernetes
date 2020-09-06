@@ -13,7 +13,7 @@ repositories:
   url: https://storage.googleapis.com/jenkinsxio/charts
 releases:
 - chart: jenkins-x/jxboot-helmfile-resources
-  version: 0.0.294
+  version: 0.0.295
   name: jxboot-helmfile-resources
   namespace: jx
   values:
