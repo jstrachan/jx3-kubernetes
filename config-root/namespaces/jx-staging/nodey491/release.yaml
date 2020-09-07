@@ -2,9 +2,9 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2020-09-07T14:24:03Z"
+  creationTimestamp: "2020-09-07T14:41:02Z"
   deletionTimestamp: null
-  name: 'nodey491-1.0.39'
+  name: 'nodey491-1.0.43'
   namespace: jx-staging
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
@@ -24,8 +24,8 @@ spec:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
       message: |
-        release 1.0.39
-      sha: cc183ccf6fe0d2b19b006768de0d7a48eba6b8a7
+        release 1.0.43
+      sha: 19199e0f7fcce1a55a72b20221ef3fe1de762e2e
     - author:
         accountReference:
           - id: jenkins-x-bot-0
@@ -40,13 +40,13 @@ spec:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
       message: |
-        release 1.0.39
-      sha: a488b9777bfb475ae23cbb067c9029b32dc5b4d4
+        release 1.0.43
+      sha: 00314a140e4ba06d34e71326ed3334250436f602
   gitCloneUrl: https://github.com/jstrachan/nodey491.git
   gitHttpUrl: https://github.com/jstrachan/nodey491
   gitOwner: jstrachan
   gitRepository: nodey491
   name: 'nodey491'
-  releaseNotesURL: https://github.com/jstrachan/nodey491/releases/tag/v1.0.39
-  version: v1.0.39
+  releaseNotesURL: https://github.com/jstrachan/nodey491/releases/tag/v1.0.43
+  version: v1.0.43
 status: {}
