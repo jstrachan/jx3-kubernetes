@@ -1,0 +1,52 @@
+# Source: nodey491/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2020-09-07T19:32:29Z"
+  deletionTimestamp: null
+  name: 'nodey491-1.0.45'
+  namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author:
+        accountReference:
+          - id: jenkins-x-bot-0
+            provider: jenkins.io/git-github-userid
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        accountReference:
+          - id: jenkins-x-bot-0
+            provider: jenkins.io/git-github-userid
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        release 1.0.45
+      sha: 1c975ec09a05a183d7b51fae11825633a5a9c67a
+    - author:
+        accountReference:
+          - id: jenkins-x-bot-0
+            provider: jenkins.io/git-github-userid
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        accountReference:
+          - id: jenkins-x-bot-0
+            provider: jenkins.io/git-github-userid
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        release 1.0.45
+      sha: cb937bfde7c367a7b58e5f22a4b41564f2a82fc2
+  gitCloneUrl: https://github.com/jstrachan/nodey491.git
+  gitHttpUrl: https://github.com/jstrachan/nodey491
+  gitOwner: jstrachan
+  gitRepository: nodey491
+  name: 'nodey491'
+  releaseNotesURL: https://github.com/jstrachan/nodey491/releases/tag/v1.0.45
+  version: v1.0.45
+status: {}
