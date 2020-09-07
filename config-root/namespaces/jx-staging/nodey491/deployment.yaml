@@ -5,7 +5,7 @@ metadata:
   name: nodey491-nodey491
   labels:
     draft: draft-app
-    chart: "nodey491-1.0.39"
+    chart: "nodey491-1.0.43"
     gitops.jenkins-x.io/pipeline: 'namespaces'
   namespace: jx-staging
   annotations:
@@ -23,7 +23,7 @@ spec:
     spec:
       containers:
         - name: nodey491
-          image: "ghcr.io/jstrachan/nodey491:1.0.39"
+          image: "ghcr.io/jstrachan/nodey491:1.0.43"
           imagePullPolicy: IfNotPresent
           env:
           envFrom: null
@@ -53,4 +53,4 @@ spec:
               memory: 128Mi
       terminationGracePeriodSeconds:
       imagePullSecrets:
-        - "knative-docker-user-pass"
+        - name: "knative-docker-user-pass"
