@@ -11,6 +11,8 @@ repositories:
   url: https://kubernetes-charts.storage.googleapis.com
 - name: jx3
   url: https://storage.googleapis.com/jenkinsxio/charts
+- name: dev
+  url: http://bucketrepo/bucketrepo/charts/
 releases:
 - chart: jenkins-x/jxboot-helmfile-resources
   version: 0.0.295
@@ -48,5 +50,9 @@ releases:
   namespace: jx
   values:
   - versionStream/charts/jenkins-x/bucketrepo/values.yaml.gotmpl
+- chart: dev/nodey491
+  version: 1.0.35
+  name: nodey491
+  namespace: jx-staging
 templates: {}
 missingFileHandler: ""
