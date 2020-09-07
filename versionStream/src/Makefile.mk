@@ -56,7 +56,7 @@ fetch: init
 	jx secret convert --dir $(OUTPUT_DIR)
 
 	# replicate secrets to local staging/production namespaces
-	jx secret replicate --name knative-docker-user-pass
+	jx secret replicate --name knative-docker-user-pass --to jx-staging
 
 .PHONY: build
 # uncomment this line to enable kustomize
