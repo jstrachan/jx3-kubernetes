@@ -55,6 +55,9 @@ fetch: init
 	# see: https://github.com/jenkins-x/jx-secret#mappings
 	jx secret convert --dir $(OUTPUT_DIR)
 
+	# replicate secrets to local staging/production namespaces
+	jx secret replicate --to jx-staging --to jx-production --name knative-docker-user-pass
+
 .PHONY: build
 # uncomment this line to enable kustomize
 #build: build-kustomise
