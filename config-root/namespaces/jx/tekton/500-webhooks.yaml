@@ -19,6 +19,7 @@ metadata:
   name: webhook-certs
   namespace: jx
   labels:
+    pipeline.tekton.dev/release: v0.11.3
     gitops.jenkins-x.io/pipeline: 'namespaces'
 spec:
   backendType: local
