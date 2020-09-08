@@ -8,6 +8,7 @@ metadata:
     repository: nodey491
     gitops.jenkins-x.io/pipeline: 'namespaces'
   name: jstrachan-nodey491
+  namespace: jx
 spec:
   httpCloneURL: https://github.com/jstrachan/nodey491.git
   org: jstrachan
