@@ -33,7 +33,7 @@ releases:
   values:
   - versionStream/charts/stable/nginx-ingress/values.yaml.gotmpl
 - chart: jenkins-x/tekton
-  version: 0.0.62
+  version: 0.0.63
   name: tekton
   namespace: jx
   values:
