@@ -19,7 +19,7 @@ spec:
   webHookEngine: "Lighthouse"
   teamSettings:
     appsRepository: http://chartmuseum.jenkins-x.io
-    buildPackRef: "master"
+    buildPackRef: "preview"
     buildPackUrl: "https://github.com/jenkins-x/jxr-packs-kubernetes.git"
     defaultScheduler:
       apiVersion: jenkins.io/v1
