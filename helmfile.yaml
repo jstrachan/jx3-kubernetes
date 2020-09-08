@@ -54,5 +54,9 @@ releases:
   version: 1.0.45
   name: nodey491
   namespace: jx-staging
+- chart: dev/nodey492
+  version: 1.0.1
+  name: nodey492
+  namespace: jx-staging
 templates: {}
 missingFileHandler: ""
