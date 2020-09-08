@@ -4,7 +4,7 @@ autoUpdate:
 bootConfigURL: https://github.com/jenkins-x/jx3-boot-config
 buildPacks:
   buildPackLibrary:
-    gitRef: master
+    gitRef: preview
     gitURL: https://github.com/jenkins-x/jxr-packs-kubernetes.git
 cluster:
   chartRepository: http://bucketrepo/bucketrepo/charts/
