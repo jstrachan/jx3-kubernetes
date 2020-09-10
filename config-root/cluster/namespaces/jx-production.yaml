@@ -5,7 +5,6 @@ metadata:
   labels:
     name: jx-production
     gitops.jenkins-x.io/pipeline: 'cluster'
-    gitops.jenkins-x.io/boot-namespace: 'jx'
   name: jx-production
 spec: {}
 status: {}
