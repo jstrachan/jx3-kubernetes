@@ -5,6 +5,7 @@ metadata:
   labels:
     name: jx-staging
     gitops.jenkins-x.io/pipeline: 'cluster'
+    gitops.jenkins-x.io/boot-namespace: 'jx'
   name: jx-staging
 spec: {}
 status: {}
