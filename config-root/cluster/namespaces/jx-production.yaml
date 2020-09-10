@@ -5,7 +5,6 @@ metadata:
   labels:
     name: jx-production
     gitops.jenkins-x.io/pipeline: 'cluster'
-    team: 'jx'
   name: jx-production
 spec: {}
 status: {}

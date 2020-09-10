@@ -5,7 +5,6 @@ metadata:
   labels:
     name: nginx
     gitops.jenkins-x.io/pipeline: 'cluster'
-    team: 'jx'
   name: nginx
 spec: {}
 status: {}
