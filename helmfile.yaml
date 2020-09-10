@@ -26,6 +26,10 @@ releases:
   namespace: jx
   values:
   - versionStream/charts/jx3/jenkins-x-crds/values.yaml.gotmpl
+- chart: jx3/jx-preview
+  version: 0.0.56
+  name: jx-previews
+  namespace: jx
 - chart: stable/nginx-ingress
   version: 1.39.1
   name: nginx-ingress
