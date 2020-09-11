@@ -1,0 +1,36 @@
+# Source: godemo62/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2020-09-11T04:00:59Z"
+  deletionTimestamp: null
+  name: 'godemo62-0.0.2'
+  namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author:
+        accountReference:
+          - id: jenkins-x-bot-0
+            provider: jenkins.io/git-github-userid
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        accountReference:
+          - id: jenkins-x-bot-0
+            provider: jenkins.io/git-github-userid
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        release 0.0.2
+      sha: da785bbb17d9c8016ae250cdc974f17e35020eab
+  gitCloneUrl: https://github.com/jstrachan/godemo62.git
+  gitHttpUrl: https://github.com/jstrachan/godemo62
+  gitOwner: jstrachan
+  gitRepository: godemo62
+  name: 'godemo62'
+  releaseNotesURL: https://github.com/jstrachan/godemo62/releases/tag/v0.0.2
+  version: v0.0.2
+status: {}
