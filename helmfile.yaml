@@ -62,5 +62,9 @@ releases:
   version: 1.0.1
   name: nodey492
   namespace: jx-staging
+- chart: dev/godemo62
+  version: 0.0.2
+  name: godemo62
+  namespace: jx-staging
 templates: {}
 missingFileHandler: ""
