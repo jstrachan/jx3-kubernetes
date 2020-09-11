@@ -8,6 +8,10 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - jstrachan/godemo62
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - jstrachan/nodey491
       require_self_approval: true
     - lgtm_acts_as_approve: true
@@ -28,6 +32,22 @@ data:
       additional_labels: null
     owners: {}
     plugins:
+      jstrachan/godemo62:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
       jstrachan/jx3-demo-kubernetes:
       - config-updater
       - approve
@@ -88,6 +108,9 @@ data:
     triggers:
     - repos:
       - jstrachan/jx3-demo-kubernetes
+      trusted_org: todo
+    - repos:
+      - jstrachan/godemo62
       trusted_org: todo
     - repos:
       - jstrachan/nodey491
