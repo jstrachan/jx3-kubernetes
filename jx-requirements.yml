@@ -48,6 +48,21 @@ environments:
       enabled: false
       production: false
   key: production
+- gitKind: github
+  gitServer: https://github.com
+  ingress:
+    domain: ""
+    externalDNS: false
+    namespaceSubDomain: ""
+    tls:
+      email: ""
+      enabled: false
+      production: false
+  key: nodey489
+  owner: jstrachan
+  promotionStrategy: Auto
+  remoteCluster: true
+  repository: nodey489
 gitops: true
 ingress:
   domain: 34.78.85.241.nip.io
