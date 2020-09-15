@@ -13,6 +13,10 @@ data:
               required_status_checks:
                 contexts:
                 - promotion-build
+            nodey489:
+              required_status_checks:
+                contexts:
+                - pr-build
             nodey490:
               required_status_checks:
                 contexts:
@@ -42,6 +46,17 @@ data:
         branches:
         - master
         name: promotion
+        skip_report: true
+      jstrachan/nodey489:
+      - agent: tekton
+        branches:
+        - master
+        name: release
+        skip_report: true
+      - agent: tekton
+        branches:
+        - master
+        name: release
         skip_report: true
       jstrachan/nodey490:
       - agent: tekton
@@ -76,6 +91,19 @@ data:
         name: promotion-build
         rerun_command: /test this
         trigger: (?m)^/test( all| this),?(\s+|$)
+      jstrachan/nodey489:
+      - agent: tekton
+        always_run: true
+        context: pr-build
+        name: pr-build
+        rerun_command: /test this
+        trigger: (?m)^/test( all| this),?(\s+|$)
+      - agent: tekton
+        always_run: true
+        context: pr-build
+        name: pr-build
+        rerun_command: /test this
+        trigger: (?m)^/test( all| this),?(\s+|$)
       jstrachan/nodey490:
       - agent: tekton
         always_run: true
@@ -108,6 +136,7 @@ data:
       merge_method:
         jstrachan/godemo62: merge
         jstrachan/jx3-demo-kubernetes: merge
+        jstrachan/nodey489: merge
         jstrachan/nodey490: merge
         jstrachan/nodey491: merge
         jstrachan/nodey492: merge
@@ -122,6 +151,7 @@ data:
         - needs-rebase
         repos:
         - jstrachan/jx3-demo-kubernetes
+        - jstrachan/nodey489
         - jstrachan/godemo62
         - jstrachan/nodey490
         - jstrachan/nodey491
@@ -136,6 +166,7 @@ data:
         - needs-rebase
         repos:
         - jstrachan/jx3-demo-kubernetes
+        - jstrachan/nodey489
         - jstrachan/godemo62
         - jstrachan/nodey490
         - jstrachan/nodey491

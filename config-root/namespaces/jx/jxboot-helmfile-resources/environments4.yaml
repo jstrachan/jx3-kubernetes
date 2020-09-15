@@ -1,0 +1,19 @@
+# Source: jxboot-helmfile-resources/templates/environments.yaml
+apiVersion: jenkins.io/v1
+kind: Environment
+metadata:
+  labels:
+    env: "nodey489"
+    team: jx
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: "nodey489"
+  namespace: jx
+spec:
+  source:
+    ref: "master"
+    url: https://github.com/jstrachan/nodey489.git
+  kind: Permanent
+  label: Nodey489
+  promotionStrategy: "Auto"
+  namespace: "jx-nodey489"
+  remoteCluster: true

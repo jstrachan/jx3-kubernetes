@@ -8,7 +8,15 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - jstrachan/nodey489
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - jstrachan/godemo62
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - jstrachan/nodey489
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
@@ -67,6 +75,22 @@ data:
       - heart
       - cat
       - override
+      - dog
+      - pony
+      jstrachan/nodey489:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
       - dog
       - pony
       jstrachan/nodey490:
@@ -130,7 +154,13 @@ data:
       - jstrachan/jx3-demo-kubernetes
       trusted_org: todo
     - repos:
+      - jstrachan/nodey489
+      trusted_org: todo
+    - repos:
       - jstrachan/godemo62
+      trusted_org: todo
+    - repos:
+      - jstrachan/nodey489
       trusted_org: todo
     - repos:
       - jstrachan/nodey490

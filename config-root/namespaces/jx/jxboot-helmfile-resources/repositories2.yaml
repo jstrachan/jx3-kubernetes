@@ -1,0 +1,20 @@
+# Source: jxboot-helmfile-resources/templates/repositories.yaml
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  name: "nodey489"
+  labels:
+    jenkins.io/gitSync: "false"
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  namespace: jx
+spec:
+  description: "the git repository for the Nodey489 environment"
+  provider: "https://github.com"
+  providerName: 'github'
+  org: "jstrachan"
+  repo: "nodey489"
+  httpCloneURL: "https://github.com/jstrachan/nodey489.git"
+  url: "https://github.com/jstrachan/nodey489.git"
+  scheduler:
+    kind: Scheduler
+    name: "pr-only"
