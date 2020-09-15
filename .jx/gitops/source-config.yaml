@@ -10,6 +10,7 @@ spec:
     providerName: github
     repositories:
     - name: godemo62
+    - name: nodey489
     - name: nodey490
     - name: nodey491
     - name: nodey492
